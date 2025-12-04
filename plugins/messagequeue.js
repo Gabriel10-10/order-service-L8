@@ -21,6 +21,7 @@ module.exports = fp(async function (fastify, opts) {
         reconnect_limit: process.env.ORDER_QUEUE_RECONNECT_LIMIT || 0
       }
       
+      
       if (process.env.ORDER_QUEUE_TRANSPORT !== undefined) {
         connectOptions.transport = process.env.ORDER_QUEUE_TRANSPORT
       }
